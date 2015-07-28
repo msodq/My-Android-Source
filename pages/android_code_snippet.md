@@ -13,3 +13,17 @@ public static String convertArrayStringToCommaSeparated(String[] strings) {
 	return sb.toString();
 }
 ```
+
+* Change a date format into other date format
+```
+public static String changeDateFormat(String date) {
+	String textNewDate = "";
+	DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z"); //change "yyyy-MM-dd HH:mm:ss z" with your current date format
+	DateFormat dfNew = new SimpleDateFormat("dd MMMM yyyy, hh:mm aa"); //change "dd MMMM yyyy, hh:mm aa" with new date format
+	try {
+		Date newDate = df.parse(date);
+		textNewDate = dfNew.format(newDate);
+	} catch (ParseException e) {}
+	return textNewDate;
+}
+```
