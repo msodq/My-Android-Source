@@ -9,5 +9,3 @@ Android Tools
 
 Troubleshooting Installation Tools Error
 ===========================
-* [DOWNLOAD TO FIX] (http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2014-001.dmg
-) : OS X Yosemite - Eclipse: To open “eclipse” you need to install the legacy Java SE 6 runtime. 
