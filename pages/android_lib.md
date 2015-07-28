@@ -6,3 +6,4 @@ A list of links to Awesome Android Library list
 * https://github.com/wasabeef/awesome-android-ui
 * https://github.com/wasabeef/awesome-android-libraries
 * https://github.com/cesards/AndroidElementals
+* https://github.com/Trinea/android-open-project/tree/master/English%20Version
