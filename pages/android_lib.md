@@ -1,4 +1,4 @@
-### A list of links to Awesome Android Library list
+A list of links to Awesome Android Library list
 ===========================
 * https://android-arsenal.com/
 * http://alamkanak.github.io/android-libraries-and-resources/
