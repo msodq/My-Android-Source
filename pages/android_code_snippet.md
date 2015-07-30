@@ -28,7 +28,6 @@ public static String changeDateFormat(String date) {
 }
 ```
 
-
 * Auto close AlertDialog after a specific time
 ```
 public void showAlertDialogWithAutoClose() {
