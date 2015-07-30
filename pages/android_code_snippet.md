@@ -27,3 +27,24 @@ public static String changeDateFormat(String date) {
 	return textNewDate;
 }
 ```
+
+
+* Auto close AlertDialog after a specific time
+```
+public void showAlertDialogWithAutoClose() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(
+                 getApplicationContext());
+        builder.setTitle("Title")
+                .setMessage("message")
+                .setCancelable(false);
+        final AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+	            if (alertDialog.isShowing())
+	                alertDialog.dismiss();
+            }
+        }, 5000); //change 5000 with a specific time you want
+    }
+```
