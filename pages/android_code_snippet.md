@@ -46,3 +46,27 @@ public void showAlertDialogWithAutoClose() {
 	}, 5000); //change 5000 with a specific time you want
 }
 ```
+
+* Delete instantly SPACE from an edittext if pressed the SPACE
+```
+EditText et = (EditText) findViewById(R.id.et);
+et.addTextChangedListener(new TextWatcher() {
+
+	@Override
+	public void onTextChanged(CharSequence s, int start, int before, int count) {
+	}
+
+	@Override
+	public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+	}
+
+	@Override
+	public void afterTextChanged(Editable s) {
+		String result = s.toString().replaceAll(" ", "");
+		if (!s.toString().equals(result)) {
+			et.setText(result);
+			et.setSelection(result.length());
+      	}
+	}
+});
+```
