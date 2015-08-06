@@ -94,3 +94,16 @@ et.addTextChangedListener(new TextWatcher() {
         //if null
     }
 ```
+
+* When press back button from MainActivity not logged out
+```
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Intent startMain = new Intent(Intent.ACTION_MAIN);
+            startMain.addCategory(Intent.CATEGORY_HOME);
+            startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(startMain);
+        }
+        return false;
+    }
+```
