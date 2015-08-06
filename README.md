@@ -5,3 +5,4 @@ AndroSnippet
 * [Android Libraries] (pages/android_lib.md)
 * [Android Design] (pages/android_design.md)
 * [Android Code Snippet] (pages/android_code_snippet.md)
+* [Android Utils] (utils)
