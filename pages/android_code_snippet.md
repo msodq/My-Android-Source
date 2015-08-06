@@ -14,6 +14,12 @@ public static String convertArrayStringToCommaSeparated(String[] strings) {
 }
 ```
 
+* Remove enter from string
+```
+	String str = "this is your string";
+	str = str.replace("\n", "").replace("\r", "");
+```
+
 * Change a date format into other date format
 ```
 public static String changeDateFormat(String date) {
