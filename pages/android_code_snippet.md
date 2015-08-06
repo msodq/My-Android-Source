@@ -70,3 +70,27 @@ et.addTextChangedListener(new TextWatcher() {
 	}
 });
 ```
+
+* Get Enum Value from String
+```
+    public enum State {
+        stateA, stateB, stateC, stateD, stateE
+    }
+
+    public static State getState(String str) {
+        for (State state : State.values()) {
+            if (state.name().equalsIgnoreCase(str))
+                return state;
+        }
+        return null;
+    }
+
+    //this to implement the function
+    String state = "stateA";
+    State stateValue = getState(state);
+    if (stateValue != null) {
+        //not null
+    }else{
+        //if null
+    }
+```
