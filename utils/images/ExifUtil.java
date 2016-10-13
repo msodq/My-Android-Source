@@ -1,4 +1,4 @@
-package com.msodq.androutils.utils;
+package com.msodq.androutils.utils.image;
 
 /**
  * Created by mohamadsodiq on 3/20/15.
